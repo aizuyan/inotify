@@ -169,12 +169,17 @@ class Inotify
         }
 
         if (!empty($this->fileInclude)) {
+            $pass = false;
             foreach ($this->fileInclude as $includeRegex) {
                 if (preg_match($includeRegex, $basename)) {
+                    $pass = true;
                     break;
                 }
             }
-            return false;
+
+            if (false == $pass) {
+                return false;
+            }
         }
 
         if (!empty($this->fileExclude)) {
