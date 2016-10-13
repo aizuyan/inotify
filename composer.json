@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": ">=5.4",
         "aizuyan/pipe": "*"
     },
     "autoload": {
