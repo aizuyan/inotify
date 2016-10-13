@@ -1,0 +1,20 @@
+{
+    "name": "aizuyan/inotify",
+    "description": "recursive monitor file and directory based on inotify-tools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "燕睿涛",
+            "email": "ritoyan@163.com"
+        }
+    ],
+    "require": {
+        "aizuyan/pipe": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aizuyan\\Inotify\\": "src/"
+        }
+    }
+}
